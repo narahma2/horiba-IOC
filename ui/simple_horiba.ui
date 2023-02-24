@@ -496,6 +496,9 @@
       <pointsize>12</pointsize>
      </font>
     </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Change groove density setting (takes a while to change).&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;- Low:&lt;/span&gt; 300 gr/mm; ~10 nm/mm dispersion; 0–6000 nm range&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;- Medium:&lt;/span&gt; 600 gr/mm; ~5 nm/mm dispersion; 0–3000 nm range&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;- High:&lt;/span&gt; 1200 gr/mm; ~2 nm/mm dispersion; 0–1500 nm range&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
     <property name="channel" stdset="0">
      <string>HORIBA-IHR320:TURRET</string>
     </property>
@@ -540,7 +543,7 @@
      </font>
     </property>
     <property name="text">
-     <string>Turret</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Grating&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="alignment">
      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -575,6 +578,9 @@
       <width>100</width>
       <height>31</height>
      </rect>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Maximum wavelength depends on the grating.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="channel" stdset="0">
      <string notr="true">HORIBA-IHR320:POSITION</string>
@@ -617,7 +623,7 @@
     <property name="font">
      <font>
       <family>Lucida Sans Typewriter</family>
-      <pointsize>14</pointsize>
+      <pointsize>20</pointsize>
       <weight>50</weight>
       <bold>false</bold>
      </font>
@@ -664,7 +670,7 @@
     <property name="font">
      <font>
       <family>Lucida Sans Typewriter</family>
-      <pointsize>14</pointsize>
+      <pointsize>20</pointsize>
      </font>
     </property>
     <property name="readOnly">
@@ -780,7 +786,7 @@
     <property name="font">
      <font>
       <family>Lucida Sans Typewriter</family>
-      <pointsize>14</pointsize>
+      <pointsize>20</pointsize>
      </font>
     </property>
     <property name="readOnly">
@@ -887,7 +893,7 @@
     <property name="font">
      <font>
       <family>Lucida Sans Typewriter</family>
-      <pointsize>14</pointsize>
+      <pointsize>20</pointsize>
      </font>
     </property>
     <property name="readOnly">
@@ -929,7 +935,7 @@
     <property name="font">
      <font>
       <family>Lucida Sans Typewriter</family>
-      <pointsize>14</pointsize>
+      <pointsize>20</pointsize>
      </font>
     </property>
     <property name="readOnly">
@@ -952,7 +958,7 @@
      <enum>caLineEdit::Alarm_Static</enum>
     </property>
     <property name="styleSheet" stdset="0">
-     <string notr="true">caTextEntry,caLineEdit {background-color: rgba(218, 218, 218, 255); color: rgba(0, 0, 0, 255); border-radius: 1px;} caLineEdit {border: 0px; border-style:outset; padding: 0px 0px 0px 2px; border-color: rgba(0, 0, 0, 255) rgba(0, 0, 0, 255)  rgba(0, 0, 0, 255) rgba(0, 0, 0, 255);} caTextEntry { border: 2px; padding: 0px;} caTextEntry {border-style:inset; border-color: rgba(127, 127, 127, 255) rgba(255, 255, 255, 255)  rgba(255, 255, 255, 255) rgba(127, 127, 127, 255);} caTextEntry:focus {padding: 0px; border: 2px groove rgba(255, 0, 0, 255); border-radius: 1px;} </string>
+     <string notr="true">caTextEntry,caLineEdit {background-color: rgba(218, 218, 218, 255); color: rgba(0, 0, 0, 255); border-radius: 1px;} caLineEdit {border: 0px; border-style:outset; padding: 0px 0px 0px 2px; border-color: rgba(0, 0, 0, 255) rgba(0, 0, 0, 255)  rgba(0, 0, 0, 255) rgba(0, 0, 0, 255);} caTextEntry { border: 2px; padding: 0px;} caTextEntry {border-style:inset; border-color: rgba(93, 93, 93, 255) rgba(255, 255, 255, 255)  rgba(255, 255, 255, 255) rgba(93, 93, 93, 255);} caTextEntry:focus {padding: 0px; border: 2px groove rgba(255, 0, 0, 255); border-radius: 1px;} </string>
     </property>
    </widget>
    <widget class="QLabel" name="label">
