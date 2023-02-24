@@ -1,3 +1,7 @@
+# Make sure the yaqd-horiba-ihr320 daemon is running!
+# Command to run within the conda environment that has yaqd-horiba:
+# $ yaqd-horiba-ihr320
+
 import asyncio
 import numpy as np
 import os
@@ -7,30 +11,16 @@ import yaqc
 from softioc import alarm, asyncio_dispatcher, builder, softioc
 
 
-# Set environment
-os.environ['EPICS_CA_SERVER_PORT'] = '5100'
-os.environ['EPICS_CA_REPEATER_PORT'] = '5101'
-os.environ['EPICS_CA_ADDR_LIST'] = 'localhost:5100'
-#os.environ['EPICS_CA_AUTO_ADDR_LIST'] = 'NO'
-
-# Make sure the yaqd-horiba-ihr320 daemon is running!
-# Command to run within the conda environment that has yaqd-horiba:
-# $ yaqd-horiba-ihr320
-
 # Connect to Horiba daemon
 c = yaqc.Client(39876)
 
 # Initial values
 init_position = c.get_position()
 init_slit = c.get_front_entrance_slit()
-init_mirror = 'front'
+init_mirror = c.get_exit_mirror()
 init_turret = 'low'
 
-# Initialize spectrometer
-# Waiting for tasks to finish before continuing
-c.set_position(init_position)
-c.set_front_entrance_slit(init_slit)
-c.set_exit_mirror(init_mirror)
+# Set turret default to low
 c.set_turret(init_turret)
 
 # Fetch an alarm status
