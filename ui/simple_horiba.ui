@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>452</width>
-    <height>340</height>
+    <width>448</width>
+    <height>346</height>
    </rect>
   </property>
   <property name="palette">
@@ -497,7 +497,7 @@
      </font>
     </property>
     <property name="toolTip">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Change groove density setting (takes a while to change).&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;- Low:&lt;/span&gt; 300 gr/mm; ~10 nm/mm dispersion; 0–6000 nm range&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;- Medium:&lt;/span&gt; 600 gr/mm; ~5 nm/mm dispersion; 0–3000 nm range&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;- High:&lt;/span&gt; 1200 gr/mm; ~2 nm/mm dispersion; 0–1500 nm range&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Change groove density setting (takes a while to change).&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;- Mirror:&lt;/span&gt; No dispersion.&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;- gr300:&lt;/span&gt; 300 gr/mm; ~10 nm/mm dispersion; 0–6000 nm range&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;- gr600:&lt;/span&gt; 600 gr/mm; ~5 nm/mm dispersion; 0–3000 nm range&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="channel" stdset="0">
      <string>HORIBA-IHR320:TURRET</string>
@@ -514,17 +514,17 @@
     </property>
     <item>
      <property name="text">
-      <string>low</string>
+      <string>mirror</string>
      </property>
     </item>
     <item>
      <property name="text">
-      <string>medium</string>
+      <string>gr300</string>
      </property>
     </item>
     <item>
      <property name="text">
-      <string>high</string>
+      <string>gr600</string>
      </property>
     </item>
    </widget>
@@ -632,7 +632,7 @@
      <bool>true</bool>
     </property>
     <property name="placeholderText">
-     <string>low</string>
+     <string>mirror</string>
     </property>
     <property name="channel" stdset="0">
      <string>HORIBA-IHR320:TURRET-RBV</string>
@@ -745,6 +745,9 @@
       <height>31</height>
      </rect>
     </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Horizontal entrance slit width.&lt;/p&gt;&lt;p&gt;Vertical slit width is manually controlled by the push/pull pin on the side of the entrance (3 possible settings: fully open at 15 mm, partially closed at 1 mm, and fully closed at 0 mm).&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
     <property name="channel" stdset="0">
      <string>HORIBA-IHR320:SLIT-WIDTH</string>
     </property>
@@ -856,6 +859,9 @@
      <font>
       <pointsize>12</pointsize>
      </font>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;- Front:&lt;/span&gt; Light is redirected towards the imaging camera on the front exit for alignment.&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;- Side:&lt;/span&gt; Light is redirected towards the Andor EMCCD on the side exit for XEOL.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <property name="channel" stdset="0">
      <string>HORIBA-IHR320:EXIT-MIRROR</string>

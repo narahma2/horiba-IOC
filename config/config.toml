@@ -1,0 +1,12 @@
+[mono]
+port=39876
+[mono.gratings]
+[mono.gratings.mirror]
+lines_per_mm=0
+index=0
+[mono.gratings.gr300]
+lines_per_mm=300
+index=1
+[mono.gratings.gr600]
+lines_per_mm=600
+index=2
