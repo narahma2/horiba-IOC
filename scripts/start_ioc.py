@@ -12,6 +12,7 @@ from softioc import alarm, asyncio_dispatcher, builder, softioc
 
 
 # Connect to Horiba daemon
+# This port is set in the config.toml file
 c = yaqc.Client(39876)
 
 # Initial values

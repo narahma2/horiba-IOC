@@ -1,0 +1,12 @@
+name: horiba
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.8
+  - pip
+  - yaqc=2023.6.0
+  - yaqd-control=2022.4.0
+  - pip:
+    - softioc==4.6.1
+    - yaqd-horiba==2023.1.0
