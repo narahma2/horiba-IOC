@@ -1,6 +1,9 @@
 # horiba-IOC
 EPICS soft IOC implementation for the Horiba iHR320 spectrometer.
 
+![image](https://github.com/user-attachments/assets/6f996cee-d74d-4c4b-9e69-81a4fb5ad734)
+
+
 # Quick-Start
 This installation requires a python environment, as well as the [yaq](https://yaq.fyi/) tool which handles most of the hardware communication. An `environment.yml` file is provided for a quick conda setup:
 
