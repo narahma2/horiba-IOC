@@ -41,6 +41,10 @@ The PVs served by this IOC follow a `HORIBA-IHR320:*`/`HORIBA-IHR320:*-RBV` temp
 A list of the relevant PVs is below (edit `start_ioc.py` to change the names as desired):
 
 - `HORIBA-IHR320:POSITION` / `HORIBA-IHR320:POSITION-RBV`: Central wavelength position (nm)
+    - Valid values: `0 <-> 1000`
 - `HORIBA-IHR320:SLIT-WIDTH` / `HORIBA-IHR320:SLIT-WIDTH-RBV`: Entrance horizontal slit width (mm)
+    - Valid values: `0 <-> 7`
 - `HORIBA-IHR320:EXIT-MIRROR` / `HORIBA-IHR320:EXIT-MIRROR-RBV`: Exit mirror position (front or side)
+    - Valid values: `front`, `side`
 - `HORIBA-IHR320:TURRET` / `HORIBA-IHR320:TURRET-RBV`: Turret position (names set in `config.toml`)
+    - Valid values: `mirror`, `gr300`, `gr600`
