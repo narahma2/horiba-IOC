@@ -51,3 +51,20 @@ A list of the relevant PVs is below (edit `start_ioc.py` to change the names as 
     - Valid values: `front`, `side`
 - `HORIBA-IHR320:TURRET` / `HORIBA-IHR320:TURRET-RBV`: Turret position (names set in `config.toml`)
     - Valid values: `mirror`, `gr300`, `gr600`
+
+# Drivers
+The yaq software uses the libusb library for communicating with the Horiba device instead of the vendor drivers. For Windows installations, the vendor driver can be overridden with WinUSB using the tool found here: https://zadig.akeo.ie/ (can be removed in case you want to go back to the vendor defaults).
+
+# Daemon
+The installation procedure described above assumes you're okay with keeping two terminal sessions open to keep the daemon and python IOC server running. They can alternatively be ran in the background, just like any other system daemon: https://yaq.fyi/blog/installing-yaq/#run-your-daemon-in-the-background
+
+# Future improvements
+This setup was meant to be a quick way to get EPICS working with the Horiba spectrometer. Although beyond the original scope of the project, some potential improvements include:
+
+- Driver support through USB commands instead of relying on yaq (one less thing to install)
+- Integration with [areaDetector](https://areadetector.github.io/areaDetector/) for a UI with live wavelength readout on the captured images
+- Incorporating an autocalibration routine into the wavelength positions (currently the central position is estimated based on the selected grating)
+
+# Credits
+- softioc: https://github.com/DiamondLightSource/pythonSoftIOC
+- yaq: https://github.com/yaq-project
